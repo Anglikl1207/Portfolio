@@ -48,12 +48,8 @@ html {
   /* Add your CSS for the layout and media queries here */
   
 
-#intro{
-    color: blue;
-}
-
-.intro p{
-    color: red;
+.homeIntro_header{
+  text-align:center;
 }
 .workItems{
   display: grid;
