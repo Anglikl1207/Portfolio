@@ -4,68 +4,174 @@
 
 /* ================= Use Border Box model ================= */
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  /* ================= Basic Responsive Images and Video ================= */
-  img,video{
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
-  
-  /* ================= Responsive Embedded Video ================= */
-  /* to use this add a div with class videoWrapper around the iframe markup copied from YouTube or Vimeo. Then also add a ratio-16-9 (most common) or ratio-4-3 class to the wrapper depending on the aspect ratio of your video */
-  /* More info here: https://codepen.io/profstein/pen/mArLRj */
-  .videoWrapper {
-      position: relative;
-      padding-top: 25px;
-      height: 0;
-    clear:both;
-    outline:1px solid red;
-  }
-  
-  .videoWrapper.ratio-16-9{
-      padding-bottom: 56.25%; /* 16:9 */
-  }
-  
-  .videoWrapper.ratio-4-3{
-      padding-bottom: 75%; /* 4:3 */
-  }
-  
-  .videoWrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  }
-  
-  /* ================= LAYOUT and MEDIA QUERIES ================= */
-  /* Add your CSS for the layout and media queries here */
-  
-
-.homeIntro_header{
-  text-align:center;
+  box-sizing: border-box;
 }
-.workItems{
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ================= Basic Responsive Images and Video ================= */
+img,
+video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ================= Responsive Embedded Video ================= */
+/* to use this add a div with class videoWrapper around the iframe markup copied from YouTube or Vimeo. Then also add a ratio-16-9 (most common) or ratio-4-3 class to the wrapper depending on the aspect ratio of your video */
+/* More info here: https://codepen.io/profstein/pen/mArLRj */
+.videoWrapper {
+  position: relative;
+  padding-top: 25px;
+  height: 0;
+  clear: both;
+  outline: 1px solid red;
+}
+
+.videoWrapper.ratio-16-9 {
+  padding-bottom: 56.25%; /* 16:9 */
+}
+
+.videoWrapper.ratio-4-3 {
+  padding-bottom: 75%; /* 4:3 */
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ================= LAYOUT and MEDIA QUERIES ================= */
+/* Add your CSS for the layout and media queries here */
+
+/* TEXT STYLE */
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+h4 {
+  font-family: Antic Didone;
+  font-style: normal;
+  font-weight: 50;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+h6 {
+  font-family: lato;
+  font-size: 12px;
+  letter-spacing: 0.195em;
+  color: #5e6da1;
+}
+
+.title {
+  font-family: Antic Didone;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 18px;
+}
+.homeIntro {
+  margin: 80px auto;
+}
+
+.btn {
+  text-decoration: none;
+  color: #5e6da1;
+  font-size: 12px;
+  padding: 10px 20px;
+  border: 1px solid #5e6da1;
+  border-radius: 3px;
+}
+
+.homeIntro_header {
+  text-align: center;
+  font-family: Antic Didone;
+  font-size: 40 px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.homeIntro button {
+  border: 1px solid #5e6da1;
+  background-color: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 155px;
+  height: 44px;
+}
+
+.aboutMe,
+.work,
+.contact {
+  padding: 15px;
+}
+.workItems {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 30px;
 }
 
+.contact h4 {
+  text-align: center;
+}
 
-@media (min-width: 600px){
-  .workItems{
+@media (min-width: 600px) {
+  .workItems {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    
+    margin: 30px;
   }
-  .work{
+  .work {
     max-width: 900px;
-  margin:0 auto;
+    margin: 0 auto;
   }
-  
-}/*end emdia query */
+
+  h2 {
+    font-family: Antic Didone;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 72px;
+    line-height: 18px;
+  }
+  h4 {
+    font-family: Antic Didone;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 22px;
+    line-height: 18px;
+  }
+
+  h6 {
+    font-family: lato;
+    font-size: 20px;
+    letter-spacing: 0.195em;
+    color: #5e6da1;
+  }
+
+  .title {
+    font-family: Antic Didone;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 18px;
+  }
+  .homeIntro {
+    margin: 150px auto;
+  }
+  .homeIntro_header p {
+    font-size: 24px;
+  }
+  .homeIntro_header {
+    padding: 30px;
+  }
+  .aboutMe,
+  .work,
+  .contact {
+    margin: 150px;
+  }
+} /*end emdia query */
