@@ -1,0 +1,19 @@
+.site-footer{
+    margin: 0;
+      display: inline-block;
+      text-align: center;
+  }
+  
+  .social p{
+    display: inline-flex;
+    list-style: none;
+  }
+  .social a{
+    color: #030201;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: 'Mulish', sans-serif;
+      font-weight: 400;
+      cursor: pointer;
+      padding: 20px;
+  }
